@@ -1,0 +1,208 @@
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+ .header-content button{
+  margin-left: 15px;
+ }
+
+ .logout-button {
+  background-color: #1a2d5a; /* Dark Blue */
+  border: none;
+  border-radius: 12px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #0e1a33; /* Darker Blue */
+  color: white;
+}
+
+/* TODO APP CSS BEGINS   */
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h1{
+  margin-right: 15rem;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.centered-box {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  margin-top: 2rem;
+}
+
+
+h1{
+  margin-bottom: 20px;
+}
+.container {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2), 0 15px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  flex: 1; /* Take remaining width */
+  padding: 8px;
+  font-size: 16px;
+}
+
+.add-task-btn {
+  padding: 8px;
+  margin-left: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%; /* Make it round */
+
+}
+
+.add-task-btn:hover {
+  background-color: #0056b3;
+}
+
+.todo-list-box {
+  position: relative;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 2px;
+}
+
+.todo-list li {
+  margin-bottom: 10px;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* .checkbox {
+  opacity: 0; 
+} */
+
+.checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.tick {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  display: none;
+}
+
+.checkbox.checked .tick {
+  display: block;
+}
+
+
+
+.edit-btn {
+  margin-right: 10px; /* Add some spacing between edit and delete buttons */
+  background: transparent; /* Transparent background */
+  border: none;
+  cursor: pointer;
+  outline: none; /* Remove outline */
+}
+
+.edit-btn:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+
+
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #ff0000;
+  margin-left: 5px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+.options span{
+  color: grey;
+}
+
+.options button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: grey;
+}
+
+.options button:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.filter-options .all-btn{
+  color: blue;
+}
